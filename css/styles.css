@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.menu {
+  width: 300px;
+  position: relative;
+}
+.menu__togglebutton {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/1598355306_hamburger_menu.png");
+  cursor: pointer;
+  background-size: 100%;
+  background-color: transparent;
+  z-index: 2;
+  position: absolute;
+}
+.menu__container {
+  list-style-type: none;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.menu__container--show {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.menu__item {
+  width: 300px;
+  padding: 20px;
+  cursor: pointer;
+}
+.menu__item--home {
+  background-color: grey;
+}
+.menu__item--red {
+  background-color: red;
+}
+.menu__item--green {
+  background-color: green;
+}
+.menu__item--blue {
+  background-color: blue;
+}
+.menu__item--yellow {
+  background-color: yellow;
+}
+
+.body--home {
+  background-color: grey;
+}
+
+.body--red {
+  background-color: red;
+}
+
+.body--green {
+  background-color: green;
+}
+
+.body--blue {
+  background-color: blue;
+}
+
+.body--yellow {
+  background-color: yellow;
+}
+
+/* change ham image to close */
+.navbar {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #f6d15e;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: black;
+  /* hide the menu above the screen by default */
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  /* transition adds a little animation when sliding in and out the menu */
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.showNav {
+  /* show the menu */
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+/* basic nav styling below */
+.navbar ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar ul li a {
+  color: black;
+  padding-bottom: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
